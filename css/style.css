@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+*, *::before,  * ::after {
+    box-sizing: border-box;
+    transition: all 0.7s ease;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Poppins" sans-serif;
+    background-color: var(--main-bgc);
+}
+main {
+    flex-grow: 1 ;
+}
+img {
+    vertical-align: middle;
+    object-fit: cover;
+}
+/* .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+} */
+
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 10px 50px;
+}
+
+.check-span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    margin-right: 20px;
+    border-radius: 2px;
+}
+
+.check-input:checked ~ .check-span {
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+}
+
+.check-input:checked ~ .check-span-1 {
+    background-image: url("../images/table-tennis.png");
+}
+
+.check-input:checked ~ .check-span-2 {
+    background-image: url("../images/basketball-ball.png");
+}
+
+.check-input:checked ~ .check-span-3 {
+    background-image: url("../images/volleyball-ball.png");
+}
+
+.check-input:checked ~ .check-span-4 {
+    background-image: url("../images/hockey-puck.png");
+}
+
